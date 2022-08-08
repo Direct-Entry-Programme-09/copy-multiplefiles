@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="422.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Label layoutX="62.0" layoutY="37.0" text="Select files to copy" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="37.0" layoutY="68.0" prefHeight="3.0" prefWidth="514.0" AnchorPane.leftAnchor="60.0" />
+      <JFXButton fx:id="btnChooseSource" layoutX="62.0" layoutY="119.0" onAction="#btnChooseSourceOnAction" style="-fx-background-color: #A6B3CD;" text="Choose files" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <VBox fx:id="vbxFileList" layoutX="201.0" layoutY="77.0" prefHeight="131.0" prefWidth="346.0" AnchorPane.leftAnchor="201.0" />
+      <JFXButton fx:id="btnChooseDestination" layoutX="62.0" layoutY="281.0" onAction="#btnChooseDestinationOnAction" style="-fx-background-color: #A6B3CD;" text="Choose Directory" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="62.0" layoutY="230.0" text="Select Destination Folder to copy" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="37.0" layoutY="261.0" prefHeight="3.0" prefWidth="514.0" AnchorPane.leftAnchor="60.0" />
+      <JFXButton fx:id="btnCopy" layoutX="240.0" layoutY="368.0" onAction="#btnCopyOnAction" style="-fx-background-color: #B3E0A8;" text="Copy" AnchorPane.leftAnchor="240.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Rectangle fx:id="rctContainer" arcHeight="5.0" arcWidth="5.0" fill="#c3cdd7" height="16.0" layoutX="62.0" layoutY="341.0" stroke="#d0bebe" strokeType="INSIDE" width="493.0" AnchorPane.leftAnchor="60.0" />
+      <Rectangle fx:id="rctLoad" arcHeight="5.0" arcWidth="5.0" fill="#5b96d0" height="16.0" layoutX="62.0" layoutY="341.0" stroke="#d0bebe" strokeType="INSIDE" width="37.0" AnchorPane.leftAnchor="60.0" />
+      <Label fx:id="lblDirectory" layoutX="254.0" layoutY="281.0" prefHeight="32.0" prefWidth="285.0" text="Label" />
+   </children>
+</AnchorPane>
